@@ -5,6 +5,7 @@ public class UtsFaktorial {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
         long faktorial = 1;
+        int i;
 
         for (i = n; i >= 1; i--) {
             faktorial *= i;
