@@ -5,10 +5,20 @@ public class UtsFaktorial {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
         long faktorial = 1;
+        int i;
 
-        for (int i = 1; i <= n; i++) {
+        for (i = n; i >= 1; i--) {
             faktorial *= i;
+
+             System.out.print(i);
+
+         if (i > 1) {
+            System.out.print(" x ");
+         } else {
+            System.out.print(" = ");
+         }
         }
-        System.out.println(n + "x" + (n - 1) + "x" + (n - 2) + " = " + faktorial);
+
+         System.out.print(faktorial);
     }
 }
